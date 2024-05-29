@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<div class="pl-4 flex min-h-screen overflow-hidden bg-gray-900 py-6 sm:py-12 flex-col text-white">
+  <div class="flex">
+    <h1 class="pl-2 font-bold text-9xl archivo">gmmz</h1>
+    <h3 class="self-end archivo pl-1 pb-2">.dev</h3>
+  </div>
+
+  <div class="group flex item-padding">
+    <p class="item">- projects</p>
+    <div class="slide-group">
+      <div onmousemove="moveLabel(event, 'discord')">
+        <button class="icon fa-solid fa-3x fa-plane-departure peer" type="button"
+                onclick="window.open('https://flights.gmmz.dev/', '_blank')"></button>
+
+        <span id="discordTooltip" class="tooltip">flights</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="group flex item-padding">
+    <p class="item">- socials</p>
+    <div class="slide-group">
+      <button class="icon fa-brands fa-3x fa-discord peer" type="button"
+              onclick="window.open('https://discord.com/users/573481869937606696', '_blank')"></button>
+      <button class="icon fa-brands fa-3x fa-github" type="button"
+              onclick="window.open('https://github.com/Rattlyy', '_blank')"></button>
+      <button class="icon fa-brands fa-3x fa-telegram" type="button"
+              onclick="window.open('https://t.me/Rattly', '_blank')"></button>
+      <button class="icon fa-brands fa-3x fa-x-twitter" type="button"
+              onclick="window.open('https://x.com/Rattlyy', '_blank')"></button>
+    </div>
+  </div>
+
+</div>
+
+<script src="src/js/app.js"></script>
+<script>
+  function moveLabel(e, id) {
+    let x = e.clientX;
+    let y = e.clientY;
+
+    document.getElementById(id + "Tooltip").style.left = (x + 1) + "px";
+    document.getElementById(id + "Tooltip").style.top = (y + 1) + "px";
+    console.log(x, y, "moving");
+  }
+</script>
+</body>
+
+</html>
