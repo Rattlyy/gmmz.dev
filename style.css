@@ -11,15 +11,15 @@
 }
 
 .item {
-  @apply font-bold text-5xl group-hover:text-6xl transition-all ease-in-out duration-200
+  @apply font-bold text-5xl group-hover:scale-[1.1] transform-gpu origin-bottom-left transition-all ease-in-out duration-200
 }
 
 .item-padding {
-  @apply ml-11 mt-11
+  @apply md:ml-11 md:mt-11
 }
 
 .slide-group {
-  @apply ease-in-out duration-100 transition-all opacity-0 group-hover:opacity-100 flex items-center justify-center
+  @apply mt-3 md:mt-0 md:ml-5 ease-in-out duration-200 transition-all opacity-0 group-hover:opacity-100 flex items-center md:justify-center
 }
 
 .icon {
